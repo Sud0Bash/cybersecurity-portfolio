@@ -62,11 +62,11 @@ The photo set documents the completed physical build:
 
 ### Screenshots
 
-![Lunaro launcher main screen](screenshots/launcher-main-screen.png)
+![Lunaro launcher main screen](screenshots/launcher-pages/launcher-main-screen.png)
 
 The screenshot set documents the software environment:
 
-- `screenshots/launcher-main-screen.png` - clean screenshot of the Lunaro launcher home screen.
+- `screenshots/launcher-pages/launcher-main-screen.png` - clean screenshot of the Lunaro launcher home screen.
 - `screenshots/desktop-overview.png` - Raspberry Pi desktop environment.
 - `screenshots/system-information-fastfetch.png` - terminal output showing Debian GNU/Linux 13 `trixie`, Raspberry Pi 5 Model B Rev 1.1, 1280x720 display, LXDE/Openbox, memory, disk, and network details.
 

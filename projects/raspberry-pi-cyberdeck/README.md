@@ -59,6 +59,11 @@ The photo set documents the completed physical build:
 - `photos/internal-components.jpg` - open enclosure showing the Raspberry Pi 5, ribbon cable, NFC module, and wiring.
 - `photos/nfc-module-closeup.jpg` - close-up of the NFC Module V3 board.
 - `photos/launcher-closeup-photo.jpg` - physical close-up of the launcher UI on the touchscreen.
+- `photos/hackrf-portapack-mayhem-main-menu.jpg` - HackRF PortaPack running Mayhem firmware on its main menu.
+- `photos/cyberdeck-and-hackrf-workstation.jpg` - cyberdeck and HackRF PortaPack staged together for lab integration work.
+- `photos/pn532-nfc-module-testing.jpg` - powered PN532-style NFC module during wiring/testing.
+- `photos/lunaro-launcher-source-code.jpg` - launcher source code open on the Raspberry Pi.
+- `photos/cyberdeck-development-workbench.jpg` - development workbench with cyberdeck, keyboard, NFC module, and launcher code.
 
 ### Screenshots
 
@@ -71,6 +76,22 @@ The screenshot set documents the software environment:
 - `screenshots/system-information-fastfetch.png` - terminal output showing Debian GNU/Linux 13 `trixie`, Raspberry Pi 5 Model B Rev 1.1, 1280x720 display, LXDE/Openbox, memory, disk, and network details.
 
 Image names, descriptions, and suggested README usage are tracked in `image-inventory.md`.
+
+## Development and Hardware Integration Evidence
+
+![Cyberdeck and HackRF workstation](photos/cyberdeck-and-hackrf-workstation.jpg)
+
+The newer photo set adds evidence of active development and hardware integration work. It shows the cyberdeck being used alongside a HackRF PortaPack running Mayhem firmware, a powered PN532-style NFC module, and the Lunaro launcher source code open directly on the Raspberry Pi desktop.
+
+Relevant evidence photos:
+
+- `photos/hackrf-portapack-mayhem-main-menu.jpg` - HackRF PortaPack Mayhem main menu, documenting available external SDR hardware for authorized lab experimentation and learning.
+- `photos/cyberdeck-and-hackrf-workstation.jpg` - cyberdeck launcher and HackRF PortaPack together on the workstation, showing planned integration context without claiming completed RF operations.
+- `photos/pn532-nfc-module-testing.jpg` - powered PN532-style NFC module wiring/test evidence for NFC integration work.
+- `photos/lunaro-launcher-source-code.jpg` - launcher source code being edited on the Raspberry Pi environment.
+- `photos/cyberdeck-development-workbench.jpg` - broader workbench view showing source-code development, keyboard input, and NFC hardware testing in the same setup.
+
+This evidence supports learning, testing, and integration work for HackRF/PortaPack, NFC, and SDR-adjacent workflows. It does not document advanced RF analysis, professional SDR operations, completed NFC automation, or unauthorized wireless activity.
 
 ## Hardware Integration
 

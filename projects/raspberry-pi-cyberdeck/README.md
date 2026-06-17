@@ -1,169 +1,196 @@
 # Lunaro Cyberdeck
 
-## Project Overview
+## Overview
 
-The Lunaro Cyberdeck is a Raspberry Pi 5-based portable cybersecurity learning platform built to develop skills in Linux administration, networking, hardware integration, Python development, RF experimentation, and security troubleshooting.
+Lunaro is a Raspberry Pi 5 cyberdeck build with a custom touchscreen launcher, documented hardware integration, and a working Linux desktop environment. The project is organized as an engineering build: hardware assembly, OS setup, troubleshooting, launcher development, and future wireless/RF expansion are tracked separately so completed work is not mixed with planned capability.
 
-This project is documented as an engineering build and flagship cybersecurity portfolio project. The focus is on building a portable lab system, testing hardware and software components, recording configuration work, and keeping all networking, wireless, RF, and SDR experimentation within legal and authorized lab conditions.
+The current build centers on:
 
-Current evidence folders:
+- Raspberry Pi 5 Model B running Debian GNU/Linux 13 `trixie` on a 1280x720 touchscreen display
+- A custom enclosure/stand assembly with rear I/O access and visible internal wiring
+- An integrated NFC Module V3 mounted inside the enclosure
+- The implemented `Lunaro Touch Launcher` Python/Tkinter interface
+- Documented photos and screenshots in `photos/`, `screenshots/`, and `image-inventory.md`
 
-- `screenshots/` for build photos, Linux screenshots, and interface screenshots
-- `diagrams/` for wiring, layout, or architecture diagrams
-- `notes/` for setup notes, compatibility findings, and troubleshooting logs
-- `scripts/` for Python launcher or automation work
+All networking, NFC, wireless, RF, and SDR work is treated as authorized lab work only.
 
-No build photos or screenshots are currently present in the project folder.
+## Current Status
 
-## Design Goals
+### Completed
 
-- Build a portable Raspberry Pi 5-based cybersecurity learning platform
-- Configure a Linux environment suitable for hands-on security practice
-- Integrate a touchscreen for portable use
-- Develop or improve a Python launcher for lab workflows
-- Practice Linux administration and troubleshooting
-- Explore networking and Wi-Fi monitoring concepts in a controlled lab
-- Test hardware modules such as IR and NFC components
-- Learn SDR-related workflows with compatible tools when available
-- Document design decisions, setup steps, problems, fixes, and future improvements
+- Built the physical Raspberry Pi cyberdeck around a touchscreen display and enclosure.
+- Integrated the Raspberry Pi 5 into the enclosure with rear-access USB/Ethernet ports and cable routing.
+- Mounted and wired an NFC Module V3 inside the enclosure.
+- Brought up the touchscreen as the primary display and validated the launcher running on-device.
+- Installed and captured the Linux desktop environment on the Raspberry Pi.
+- Installed and ran `fastfetch` to document system details.
+- Implemented the `Lunaro Touch Launcher` in Python with a fullscreen touch-oriented UI.
+- Added documented photos and screenshots with portfolio-friendly filenames.
 
-## Hardware Components
+### Active Development
 
-Documented or planned components include:
+- Stabilizing NFC workflows, especially continuous scanning and PN532/NFC reader behavior.
+- Refining launcher actions, dependency checks, and workspace organization.
+- Expanding documentation for setup steps, hardware wiring, and known troubleshooting notes.
+- Validating which external tools are installed on the cyberdeck versus represented as launcher entries.
 
-- Raspberry Pi 5
-- Touchscreen
-- Cyberdeck enclosure or build components
-- IR receiver
-- NFC module
-- Wi-Fi adapter with monitor mode support
-- Planned SDR tools such as HackRF or RTL-SDR
+### Future Expansion
 
-## Software Stack
+- HackRF and RTL-SDR workflows are future expansion items unless the required SDR hardware and tools are connected and tested.
+- Advanced RF capture, demodulation, and signal-analysis workflows are not presented as completed capability.
+- Wi-Fi monitoring workflows require compatible hardware, installed tooling, and controlled lab documentation before being treated as complete.
+- Additional diagrams and repeatable setup notes should be added as the build is refined.
 
-- Linux terminal and command-line utilities
-- Python
-- Python launcher interface
-- Networking tools available in the selected Linux environment
-- Wireless and SDR-related tools as tested in authorized lab conditions
-- Markdown for technical documentation
+## Build Evidence
 
-## Major Build Milestones
+### Hardware Photos
 
-- Defined the project as a portable cybersecurity learning platform
-- Selected Raspberry Pi 5 as the core computing platform
-- Identified touchscreen integration as a major build requirement
-- Identified Python launcher development as a key software task
-- Identified IR and NFC experimentation as hardware learning areas
-- Identified Wi-Fi monitoring concepts as a networking learning area
-- Identified SDR-related learning as a future expansion area
-- Created folders for screenshots, diagrams, notes, and scripts
+![Lunaro cyberdeck powered on](photos/front-powered-on.jpg)
 
-## Linux Configuration Work
+The photo set documents the completed physical build:
 
-Linux configuration work is focused on setting up and troubleshooting the Raspberry Pi 5 environment and documenting changes clearly enough to reproduce later.
+- `photos/front-powered-on.jpg` - primary powered-on front view with the Lunaro launcher visible.
+- `photos/front-launcher-view.jpg` - straight-on front view of the launcher running on the device.
+- `photos/side-angle-powered-on.jpg` - side profile showing the stand angle and desk setup.
+- `photos/front-powered-off.jpg` - front enclosure view with the display off.
+- `photos/front-enclosure-detail.jpg` - close-up of the lower enclosure and fastener area.
+- `photos/rear-ports-view.jpg` - rear/side view showing USB, Ethernet, ventilation, and stand mounting.
+- `photos/rear-wiring-view.jpg` - rear wiring and cable-routing view.
+- `photos/internal-components.jpg` - open enclosure showing the Raspberry Pi 5, ribbon cable, NFC module, and wiring.
+- `photos/nfc-module-closeup.jpg` - close-up of the NFC Module V3 board.
+- `photos/launcher-closeup-photo.jpg` - physical close-up of the launcher UI on the touchscreen.
 
-Focus areas include:
+### Screenshots
 
-- Raspberry Pi 5 operating system setup
-- Parrot OS compatibility where tested
-- Other Linux setup as tested on the Raspberry Pi 5
-- Touchscreen configuration
-- Terminal-based troubleshooting
-- Package and tool installation as needed
-- Hardware compatibility testing
-- Boot, display, and input configuration notes
-- Documentation of configuration decisions and known issues
+![Lunaro launcher main screen](screenshots/launcher-main-screen.png)
 
-## Networking Features
+The screenshot set documents the software environment:
 
-The networking portion of this project is focused on controlled lab learning and security troubleshooting.
+- `screenshots/launcher-main-screen.png` - clean screenshot of the Lunaro launcher home screen.
+- `screenshots/desktop-overview.png` - Raspberry Pi desktop environment.
+- `screenshots/system-information-fastfetch.png` - terminal output showing Debian GNU/Linux 13 `trixie`, Raspberry Pi 5 Model B Rev 1.1, 1280x720 display, LXDE/Openbox, memory, disk, and network details.
 
-Planned or documented networking areas include:
+Image names, descriptions, and suggested README usage are tracked in `image-inventory.md`.
 
-- Linux network interface review
-- Wi-Fi adapter compatibility testing
-- Monitor mode concepts
-- Local network troubleshooting
-- Safe packet and wireless learning workflows
-- Documentation of commands, outputs, limitations, and test conditions
+## Hardware Integration
 
-This project does not include unauthorized network testing.
+The build uses a Raspberry Pi 5 Model B as the core compute platform. The photos document the Pi mounted inside the enclosure, the touchscreen/ribbon connection, rear I/O access, and internal wiring.
 
-## Wireless and RF Components
+Completed hardware work includes:
 
-Wireless and RF work is intended for legal, ethical, and controlled experimentation only.
+- Raspberry Pi 5 installed in the enclosure.
+- Touchscreen installed and operating as the primary display.
+- Rear USB and Ethernet access exposed through the enclosure.
+- Stand-mounted form factor assembled and photographed.
+- NFC Module V3 mounted inside the enclosure and wired to the Pi.
+- Internal cable routing documented with rear and open-enclosure photos.
 
-Documented or planned areas include:
+The build currently documents integration evidence, not a finalized production-grade enclosure. Additional wiring diagrams and assembly notes are still future documentation work.
 
-- IR receiver experimentation
-- NFC module testing
-- Wi-Fi monitoring concepts with supported hardware
-- SDR-related learning with tools such as HackRF or RTL-SDR when available
-- Hardware compatibility notes
-- Safe usage boundaries for RF-related testing
+## Linux Setup and Troubleshooting
 
-No unauthorized wireless, RF, NFC, IR, or SDR activity is included in this project.
+The current system screenshot documents a working Raspberry Pi Linux environment:
 
-## Custom Software Development
+- OS: Debian GNU/Linux 13 `trixie` `aarch64`
+- Host: Raspberry Pi 5 Model B Rev 1.1
+- Kernel: Linux `6.12.75+rpt-rpi-2712`
+- Desktop: LXDE with Openbox
+- Display: DSI 1280x720 at 60 Hz
+- Terminal: `lxterminal`
+- Local network address shown for `wlan0`
 
-Custom software development is focused on a Python launcher interface for the cyberdeck. The launcher is intended to make the device easier to use as a portable learning platform and support common lab workflows.
+Troubleshooting and setup work already performed includes:
 
-Planned documentation should include:
+- Booting the Raspberry Pi 5 into a usable desktop environment.
+- Bringing up the DSI touchscreen display at 1280x720.
+- Using the touchscreen as the launcher target surface.
+- Installing `fastfetch` and its dependency flow to document system state.
+- Verifying visible network status from the Linux environment.
+- Capturing the desktop and system-information screenshots for reproducibility evidence.
 
-- Launcher purpose and design notes
-- Script structure
-- Features tested
-- Setup instructions
-- Screenshots of the interface when available
-- Known issues and future improvements
+Additional step-by-step installation notes should be added as active documentation work rather than treated as complete.
 
-## Challenges and Troubleshooting
+## Lunaro Touch Launcher
 
-Current and expected engineering challenges include:
+`scripts/lunaro_touch_launcher.py` is an implemented Python/Tkinter launcher for the cyberdeck. It is designed for fullscreen touchscreen use and is shown running both in a clean screenshot and on the physical device.
 
-- Confirming operating system compatibility with Raspberry Pi 5 hardware
-- Configuring the touchscreen reliably
-- Managing hardware module compatibility
-- Organizing Python launcher functionality
-- Testing Wi-Fi monitoring concepts safely and legally
-- Learning SDR tooling without overstating capability or using unauthorized signals
-- Maintaining clear build notes while the project evolves
+Implemented launcher behavior includes:
 
-## Lessons Learned
+- Fullscreen touch-oriented home screen with RF, WiFi, NFC, IR, Files, Tools, and Settings sections.
+- Page navigation, back control, fullscreen toggle, exit-to-desktop, launcher exit, and reboot confirmation.
+- System status ticker showing CPU, RAM, temperature, IP address, Wi-Fi link quality/signal when available, and current launcher page.
+- Clock display in the header.
+- Automatic creation of workspace folders under the user's home directory, including `RF`, `NFC`, `IR`, `WiFi`, `Logs`, and RF subfolders.
+- File-manager shortcuts for workspace folders when `pcmanfm` is installed.
+- Terminal shortcuts when `lxterminal` is installed.
+- Optional autostart install/remove support through `--install-autostart` and `--remove-autostart`.
 
-- A hardware-based security lab requires both technical experimentation and disciplined documentation.
-- Linux troubleshooting is easier when setup steps, errors, and fixes are recorded as they happen.
-- Hardware compatibility should be tested before assuming a module, adapter, or operating system will work as expected.
-- Cybersecurity portfolio projects should clearly separate completed work, active testing, and future plans.
-- Wireless and RF learning must stay within legal and authorized boundaries.
+Launcher actions depend on installed system tools. The code checks for missing command dependencies before launching command-based entries.
 
-## Future Improvements
+## NFC Work
 
-- Add build photos to the `screenshots/` folder
-- Add wiring or layout diagrams to the `diagrams/` folder
-- Document the Raspberry Pi 5 operating system setup process
-- Add touchscreen setup notes
-- Document Python launcher design and usage
-- Add setup notes for Wi-Fi adapter testing
-- Add IR and NFC testing notes
-- Add SDR learning notes after tools and workflows are tested
-- Add troubleshooting notes for Linux configuration and hardware compatibility issues
+The launcher includes implemented NFC helper screens and actions for lab-owned tags:
+
+- Single NFC scan through `nfc-list`.
+- UID-only scan output using `nfc-list` filtering.
+- Saved-tag tracking in `~/nfc_tags.json`.
+- UID logging in `~/Logs/nfc_uids.log`.
+- Rename-last-scanned-tag workflow.
+- MIFARE Ultralight backup using `nfc-mfultralight`.
+- Restore and verify helpers for saved dump files in `~/NFC/dumps`.
+
+Continuous NFC scanning is intentionally marked as temporarily disabled in the launcher while PN532 integration is stabilized. The README does not claim fully completed NFC automation beyond the implemented helper actions.
+
+## Wi-Fi, IR, and General Tools
+
+The launcher includes sections for Wi-Fi, IR, files, and general tools:
+
+- Wi-Fi page entries for Wireshark, an example Nmap version scan, and a Wi-Fi workspace folder.
+- IR workspace folder and terminal shortcuts.
+- File shortcuts for RF, NFC, IR, WiFi, and Logs.
+- Tools page entries for `htop`, terminal access, reboot, and launcher settings.
+
+These are launcher integrations and workspace organization features. Packet capture, monitoring-mode workflows, and IR experiments should be documented separately after hardware and tool testing.
+
+## RF and SDR Boundary
+
+The launcher includes RF workspace organization and helper hooks, but advanced RF/SDR capability remains a future expansion area.
+
+Implemented launcher support includes:
+
+- RF workspace folder creation under `~/RF`.
+- Subfolders for `hackrf`, `rtlsdr`, `captures`, `audio`, `notes`, `scripts`, and `presets`.
+- `hackrf_info` and `rtl_test` launcher actions for device/tool detection when those tools are installed.
+- Script-template generation for HackRF and RTL-SDR capture commands.
+- Help text for connecting HackRF/PortaPack and common receive-chain notes.
+
+Not claimed as complete:
+
+- Operational HackRF workflows.
+- Operational RTL-SDR capture workflows.
+- Advanced RF analysis.
+- Demodulation pipelines.
+- Any unauthorized wireless or RF activity.
+
+Those items require connected hardware, installed tools, test notes, and legal lab conditions before being documented as completed work.
+
+## Repository Layout
+
+- `README.md` - current project status and engineering summary.
+- `image-inventory.md` - original image names, renamed filenames, descriptions, and README-use recommendations.
+- `photos/` - documented hardware photos.
+- `screenshots/` - launcher, desktop, and system-information screenshots.
+- `scripts/lunaro_touch_launcher.py` - implemented Lunaro Touch Launcher source code.
+- `notes/project-history.md` - placeholder for future chronological build notes.
+- `diagrams/` - placeholder for future wiring/layout diagrams.
 
 ## Skills Demonstrated
 
-- Linux setup and troubleshooting
-- Raspberry Pi 5 configuration
-- Hardware integration planning
-- Touchscreen setup planning
-- Python scripting and interface development
-- Networking fundamentals
-- Wi-Fi monitoring concepts
-- RF learning concepts
-- Technical troubleshooting
-- Ethical lab design
-- Engineering documentation
-
-## Notes
-
-This README documents current and planned project work based only on available project information. Features, screenshots, diagrams, and scripts should be added as they are tested and documented.
+- Raspberry Pi 5 Linux setup and troubleshooting.
+- Touchscreen bring-up and fullscreen UI integration.
+- Python/Tkinter application development.
+- Hardware integration and internal component documentation.
+- NFC module integration planning and helper tooling.
+- Workspace automation for cyberdeck lab workflows.
+- Clear separation of completed work, active development, and future RF/SDR expansion.
+- Ethical lab scoping for networking, wireless, NFC, and RF experimentation.

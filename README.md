@@ -1,68 +1,104 @@
-# David Lunaro Cybersecurity Portfolio
+# David Lunaro - Cybersecurity Portfolio
 
-GitHub: [Sud0Bash](https://github.com/sud0bash)
+GitHub: [Sud0Bash](https://github.com/Sud0Bash)
 
-Entry-level cybersecurity portfolio focused on SOC analysis, Linux, network security, incident response, phishing analysis, Python scripting, and hands-on lab documentation.
+Entry-level cybersecurity portfolio focused on SOC analysis, Linux fundamentals, Python security automation, phishing investigation, network traffic analysis, security documentation, and Raspberry Pi cyberdeck development.
 
-## Professional Summary
+## Summary
 
-My name is David Lunaro, and I am building a career in cybersecurity with a strong focus on security operations, Linux, networking, incident response, and practical hands-on learning.
+I am building a cybersecurity career with a focus on security operations, technical troubleshooting, clear documentation, and hands-on lab practice. My background includes customer-facing technical support, which gives me a strong foundation in problem solving, user communication, and writing clear technical notes.
 
-Originally from a technical customer support background, I am leveraging years of troubleshooting, documentation, and user support experience as a foundation for my transition into cybersecurity.
+As a bilingual English/Spanish professional, I also bring experience explaining technical issues clearly to both technical and non-technical users.
 
-My path into cybersecurity has been driven by curiosity, a passion for technology, and a desire to understand how systems work, how they fail, and how they can be protected. I am currently completing the Google Cybersecurity Professional Certificate while developing real-world skills through home lab projects, Linux administration, network traffic analysis, security investigations, and Python scripting.
+This repository documents practical learning projects built with simulated data, personal lab systems, sanitized artifacts, and original portfolio-safe writeups. The goal is to show how I investigate, document, and explain security concepts at an entry-level SOC analyst level.
 
-Before pursuing cybersecurity, I worked in customer-facing technical support roles where I developed strong troubleshooting, documentation, and communication skills. As a bilingual English and Spanish professional, I am comfortable explaining technical concepts to both technical and non-technical users, documenting complex issues, and helping people navigate technology effectively.
+## Featured Projects
 
-The signature project in this portfolio is the Lunaro Cyberdeck, a Raspberry Pi 5-based portable security lab that I am building to explore hands-on learning across Linux administration, hardware integration, Python development, networking concepts, wireless technologies, and security-focused experimentation. This project represents my belief that the best way to learn cybersecurity is through hands-on experience and continuous exploration.
+### [Raspberry Pi Cyberdeck](projects/raspberry-pi-cyberdeck/)
 
-This portfolio serves as a record of that journey. It contains security labs, technical documentation, investigations, scripts, reports, and personal projects that demonstrate both my technical growth and my commitment to ethical, responsible, and well-documented security practices.
+**Status:** Active / featured project  
+**Focus:** Raspberry Pi 5 portable security lab, Linux setup, touchscreen launcher development, hardware integration, NFC testing, and SDR-related learning.
 
-## What You'll Find in This Portfolio
+Evidence includes build photos, screenshots, launcher source code, an image inventory, and hardware integration documentation. RF/SDR and NFC work is documented as learning, testing, and authorized lab experimentation.
 
-- Linux administration and troubleshooting labs
-- Network traffic analysis using Wireshark and tcpdump
-- Security alert triage and incident response exercises
-- Phishing investigation and analysis projects
-- Python scripting and automation exercises
-- Raspberry Pi Cyberdeck development and documentation
-- Security-focused learning notes, reports, and case studies
+### [Python Security Automation](projects/python-security-automation/)
 
-## Professional Goal
+**Status:** Active / portfolio-ready  
+**Focus:** Beginner Python scripting for security support workflows.
 
-My goal is to begin my cybersecurity career in a Security Operations Center (SOC), cybersecurity analyst, or security support role where I can continue developing practical skills, contribute to protecting systems and users, and grow into a well-rounded security professional through continuous learning and hands-on experience.
+Includes original portfolio-safe scripts for login access validation, IP allow-list checks, employee ID generation, approved-user reports, and security event summaries. Raw course notebooks are kept private and are not presented as public portfolio artifacts.
 
-## Target Roles
+### [Phishing Email Investigation](projects/phishing-email-investigation/)
 
-- Entry-level SOC Analyst
-- Cybersecurity Analyst
-- IT Security Support
+**Status:** Portfolio-ready  
+**Focus:** Phishing indicators, URL reputation concepts, alert documentation, and response recommendations.
 
-## Current Focus
+Includes an investigation README, indicators of compromise, VirusTotal-style notes, completed alert ticket, incident journal, playbook, and written report based on simulated/sanitized material.
 
-- Google Cybersecurity Professional Certificate
-- Linux command-line and security fundamentals
-- Network security and traffic analysis
-- SOC workflows and alert triage
-- Python scripting for security support tasks
-- Incident response documentation
-- Phishing analysis
-- Hands-on lab documentation
+### [Network Traffic Analysis](projects/network-traffic-analysis/)
 
-## Hands-On Tools and Platforms
+**Status:** Portfolio-ready  
+**Focus:** Wireshark, tcpdump, protocol review, and beginner network-attack analysis.
 
-- Parrot OS, Linux Mint, Windows 11
-- VirtualBox
-- Wireshark, tcpdump
-- VirusTotal and email/header review tools
-- Python
-- Markdown
-- Raspberry Pi 5
-- Touchscreen, IR/NFC modules, Wi-Fi lab hardware, and SDR-related learning tools
+Includes a network analysis README and completed PDF reports for DNS/port 53 outage investigation and SYN flood analysis.
 
-## Why This Portfolio Exists
+### [Linux File Permissions](projects/linux-file-permissions/)
 
-This repository is designed to demonstrate practical learning, documentation ability, technical growth, and ethical security practices through hands-on projects and labs. Each project is intended to show how I approach security topics, collect evidence, document findings, and reflect on what I need to improve next.
+**Status:** Portfolio-ready  
+**Focus:** Linux permissions review and command-line practice.
+
+Includes a completed Linux file-permissions report PDF and screenshot evidence from the lab activity.
+
+### [Alert Triage Lab](projects/alert-triage-lab/)
+
+**Status:** Portfolio-ready  
+**Focus:** SOC-style alert review, severity assessment, escalation notes, and evidence-based writing.
+
+Includes simulated authentication notes, a completed failed-login triage report, and a SOC-style README.
+
+## Skills Demonstrated
+
+**Security Analysis**
+
+- Alert triage and severity assessment
+- Phishing indicator review
+- Basic incident documentation
+- Evidence-based recommendations
+
+**Linux & Systems**
+
+- Linux command-line practice
+- File permission review
+- Basic system troubleshooting
+- Lab environment setup
+
+**Python**
+
+- Functions, loops, conditionals, lists, and dictionaries
+- Small security-support scripts
+- Simulated access checks and event summaries
+- Clear sample input/output documentation
+
+**Networking**
+
+- Wireshark and tcpdump practice
+- DNS, HTTP, TCP, and ICMP review
+- SYN flood and outage-analysis writeups
+- Safe handling of lab traffic
+
+**Documentation**
+
+- Markdown reports and project READMEs
+- Sanitized screenshots and evidence notes
+- Analyst-style findings and recommendations
+- Clear separation of completed work, active work, and planned work
+
+**Hardware / Lab Building**
+
+- Raspberry Pi 5 lab setup
+- Touchscreen and launcher integration
+- NFC module testing
+- HackRF/PortaPack learning in authorized lab context
 
 ## Portfolio Projects
 
@@ -80,39 +116,26 @@ This repository is designed to demonstrate practical learning, documentation abi
 | [Linux Homelab](projects/linux-homelab/) | Linux lab environment documentation | Planned | Empty README and placeholder folders. |
 | [Vulnerability Assessment](projects/vulnerability-assessment/) | Vulnerability review and reporting practice | Planned | Empty README only; no vulnerability report, risk register, or assessment artifact yet. |
 
-## Raspberry Pi 5 Cyberdeck Project
+## Current Focus
 
-One of my main personal projects is a Raspberry Pi 5 cyberdeck/security lab. The goal is to build a portable Linux-based learning system that supports hands-on cybersecurity practice in a controlled environment.
+- Continuing cybersecurity training and SOC analyst preparation
+- Practicing Linux command-line and security fundamentals
+- Building beginner Python automation examples for security support tasks
+- Expanding network traffic analysis and phishing investigation documentation
+- Developing the Raspberry Pi cyberdeck as a personal lab platform
+- Improving report writing, evidence handling, and project documentation
 
-The project includes Linux setup, touchscreen configuration, Python launcher work, IR/NFC experimentation, Wi-Fi monitoring concepts, and SDR-related learning. I use this project to practice troubleshooting, hardware integration, documentation, and safe lab testing.
+## Ethical Scope
 
-## Documentation Standards
+All work in this repository is performed in personal lab environments, simulated scenarios, authorized systems, or sanitized course/project materials. This portfolio does not include real credentials, private company data, unauthorized testing, live production investigations, or claims of professional security operations experience.
 
-I value clear documentation, ethical lab work, privacy, safe testing, and sanitized reporting. My goal is for each project to show:
-
-- What scenario or skill I practiced
-- What tools I used
-- What steps I performed
-- What evidence I collected
-- What I found
-- What I learned
-- What I would improve next
-
-## Documentation
+## Supporting Documentation
 
 - [Learning Log](docs/learning-log.md)
 - [Alert Triage Template](docs/security-reports/alert-triage-template.md)
 - [Incident Report Template](docs/security-reports/incident-report-template.md)
 - [Project README Template](templates/project-readme-template.md)
 
-## Repository Goals
+## Professional Goal
 
-- Build a professional entry-level cybersecurity portfolio
-- Demonstrate hands-on learning through safe, controlled labs
-- Practice the documentation style expected in SOC and IT security work
-- Show growth in Linux, networking, Python, phishing analysis, incident response, and security operations workflows
-- Keep screenshots, packet captures, reports, and notes sanitized
-
-## Notes
-
-All work in this repository is based on personal labs, simulated scenarios, learning exercises, or sanitized samples. This portfolio does not include real credentials, private data, unauthorized testing, or production security experience.
+My goal is to begin my cybersecurity career in an entry-level SOC analyst, cybersecurity analyst, or IT security support role where I can continue developing practical skills, contribute to protecting systems and users, and grow through hands-on experience.

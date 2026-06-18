@@ -40,7 +40,7 @@ Includes an investigation README, sanitized alert summary, indicators of comprom
 **Status:** Portfolio-ready  
 **Focus:** Wireshark, tcpdump, protocol review, and beginner network-attack analysis.
 
-Includes a network analysis README and completed PDF reports for DNS/port 53 outage investigation and SYN flood analysis.
+Includes a network analysis README and original Markdown summaries for DNS/port 53 outage investigation and SYN flood analysis.
 
 ### [Linux File Permissions](projects/linux-file-permissions/)
 
@@ -108,7 +108,7 @@ Includes simulated authentication notes, a completed failed-login triage report,
 | [Python Security Automation](projects/python-security-automation/) | Beginner Python scripting for security support tasks | Active / portfolio-ready | Original scripts, README, sample output examples, and notebook-review notes for portfolio-safe learning adaptations. |
 | [Alert Triage Lab](projects/alert-triage-lab/) | SOC alert review, severity assessment, and escalation notes | Portfolio-ready | Simulated authentication notes, completed failed-login triage report, and SOC-style README. |
 | [Phishing Email Investigation](projects/phishing-email-investigation/) | Phishing indicators, URL reputation concepts, incident notes, and response recommendations | Portfolio-ready | Investigation README, sanitized alert summary, indicators of compromise, hash reputation notes, triage summary, incident-handler summary, and response workflow. |
-| [Network Traffic Analysis](projects/network-traffic-analysis/) | Wireshark, tcpdump, protocol review, and network-attack analysis | Portfolio-ready | Network analysis README and completed PDF reports for DNS/port 53 outage investigation and SYN flood analysis. |
+| [Network Traffic Analysis](projects/network-traffic-analysis/) | Wireshark, tcpdump, protocol review, and network-attack analysis | Portfolio-ready | Network analysis README and original Markdown summaries for DNS/port 53 outage investigation and SYN flood analysis. |
 | [Linux File Permissions](projects/linux-file-permissions/) | Linux permissions review and command-line practice | Portfolio-ready | Original Markdown report and screenshot evidence. |
 | [Phishing Analysis](projects/phishing-analysis/) | General phishing analysis practice and checklist development | Scaffolded / planned | README scaffold only; completed phishing work is currently documented in the separate phishing email investigation project. |
 | [Linux Security Labs](projects/linux-security-labs/) | Users, permissions, processes, logs, and basic system review | Scaffolded / planned | README scaffold and placeholder folders for future command examples, notes, and sanitized screenshots. |

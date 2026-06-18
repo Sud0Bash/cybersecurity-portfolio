@@ -1,88 +1,92 @@
 # Network Traffic Analysis
 
-## Scenario
+## Project Overview
 
-A simulated lab workstation generated unusual outbound network traffic during a controlled analysis exercise. The goal of this project was to review packet capture data, identify common protocols, separate normal traffic from suspicious activity, and document observations in a format similar to an entry-level SOC analyst triage note.
+This project documents beginner-level network traffic analysis using simulated and sanitized investigation scenarios. The public evidence is original Markdown documentation that explains network concepts, observed symptoms, findings, and recommended next steps.
 
-This project uses simulated lab traffic only. No private network data, real credentials, or company traffic are included.
+The public-facing portfolio evidence is the original Markdown documentation linked below.
 
-## Objective
+## Scenario Summaries
 
-- Capture and review network traffic in a controlled lab environment
-- Identify DNS, HTTP, TCP, and ICMP traffic patterns
-- Use Wireshark and tcpdump filters to isolate relevant events
-- Document findings, recommendations, and next steps clearly
+### SYN Flood Denial-of-Service Scenario
 
-## Tools Used
+A simulated web service began failing for normal users while a high volume of repeated TCP SYN traffic was observed. The traffic pattern suggested that the server was being overwhelmed before normal TCP sessions could complete.
 
-- Wireshark
-- tcpdump
-- Linux terminal
-- Parrot OS or Linux Mint lab system
-- Windows 11 lab workstation
-- Markdown documentation
+Public report:
 
-## Methodology
+- [SYN Flood Analysis Summary](reports/syn-flood-analysis-summary.md)
 
-1. Started a controlled packet capture from a lab system.
-2. Generated basic network activity such as DNS lookups, ICMP requests, and HTTP browsing to safe test resources.
-3. Opened the capture in Wireshark and reviewed protocol statistics.
-4. Applied display filters for `dns`, `http`, `icmp`, and `tcp`.
-5. Used tcpdump to compare command-line packet review with Wireshark analysis.
-6. Identified source and destination hosts, protocols, ports, and timing patterns.
-7. Documented findings and separated confirmed observations from assumptions.
-8. Removed or avoided any sensitive information before publishing documentation.
+### DNS / Port 53 Outage Scenario
 
-## Findings
+A simulated website became unreachable because DNS resolution was failing. Network output indicated that UDP port 53, which is commonly used for DNS queries, was unreachable.
 
-- DNS traffic was observed before outbound web requests, which is expected behavior.
-- ICMP traffic showed basic connectivity testing between lab systems.
-- HTTP traffic demonstrated clear-text request and response metadata, reinforcing why encrypted protocols are preferred.
-- TCP connection setup and teardown were visible through SYN, SYN-ACK, ACK, and FIN packets.
-- No confirmed malware traffic, credential exposure, or unauthorized external connection was identified in this simulated lab exercise.
+Public report:
 
-## Recommendations
-
-- Continue practicing Wireshark filters for common SOC workflows.
-- Use tcpdump for quick command-line validation before deeper packet review.
-- Avoid capturing or publishing sensitive traffic from real networks.
-- Build a small reference list of common ports, protocols, and suspicious indicators.
-- Add sanitized screenshots showing filters, packet details, and protocol summaries.
+- [DNS / Port 53 Outage Summary](reports/dns-port53-outage-summary.md)
 
 ## Skills Demonstrated
 
-- Packet capture review
-- Protocol identification
-- Wireshark display filtering
-- tcpdump command-line analysis
-- Network troubleshooting
-- Evidence-based technical documentation
-- Safe handling of lab traffic
+- Network traffic interpretation.
+- TCP handshake review.
+- SYN flood denial-of-service reasoning.
+- DNS and port 53 troubleshooting.
+- ICMP unreachable-message interpretation.
+- Evidence-based findings and recommendations.
+- Clear separation of confirmed observations, possible causes, and follow-up actions.
 
-## Screenshots
+## Tools and Concepts Used
 
-Screenshots should be added to the `screenshots/` folder after sanitization.
+- TCP three-way handshake concepts: SYN, SYN-ACK, ACK.
+- TCP reset and timeout behavior.
+- DNS over UDP port 53.
+- ICMP destination/port unreachable messages.
+- Packet-capture and protocol-analysis concepts.
+- Wireshark and tcpdump as analysis tools in a lab context.
+- Markdown reporting.
 
-Recommended screenshots:
+## Evidence Reviewed
 
-- Wireshark protocol hierarchy or conversations view
-- DNS query and response filter
-- ICMP packet details
-- tcpdump command output with private details removed
+Public Markdown evidence:
 
-Example:
+- [SYN Flood Analysis Summary](reports/syn-flood-analysis-summary.md)
+- [DNS / Port 53 Outage Summary](reports/dns-port53-outage-summary.md)
+- [Network Analysis Concepts](notes/network-analysis-concepts.md)
 
-```markdown
-![Wireshark DNS filter example](screenshots/wireshark-dns-filter.png)
-```
+Supporting folders:
+
+- `packet-captures/` is currently a placeholder for future sanitized captures.
+- `screenshots/` is currently a placeholder for future sanitized screenshots.
+
+## Key Findings
+
+- Normal TCP connections require a completed handshake before application traffic can flow reliably.
+- Repeated SYN traffic without normal completion can consume server resources and disrupt legitimate users.
+- DNS failures can prevent users from reaching a website even when the web server itself may not be the original issue.
+- ICMP unreachable messages can help identify whether a service, port, route, or firewall path may be blocking communication.
+- More evidence is needed before claiming a confirmed attacker, confirmed DDoS, or production incident impact.
+
+## Recommendations
+
+- For SYN flood symptoms:
+  - Review firewall, load balancer, and server logs for repeated SYN patterns.
+  - Consider SYN rate limiting, SYN cookies, firewall/IPS rules, and upstream mitigation.
+  - Escalate if legitimate users are unable to connect or traffic volume exceeds normal baselines.
+
+- For DNS / port 53 symptoms:
+  - Check DNS service status and resolver health.
+  - Review firewall rules affecting UDP/TCP port 53.
+  - Check network device logs and DNS server logs.
+  - Escalate to network or infrastructure support if resolution remains unavailable.
+
+## Ethical and Sanitization Note
+
+This project uses simulated and sanitized learning material. It does not include private packet captures, real credentials, real company network traffic, production incident data, or claims of professional SOC/network operations experience.
+
+The public documentation is written in original wording to show analysis process, technical reasoning, and beginner-level recommendations.
 
 ## Lessons Learned
 
-- Packet analysis requires context; a packet is not suspicious by itself without understanding the environment and behavior.
-- Wireshark is useful for detailed packet inspection, while tcpdump is useful for fast command-line review.
-- DNS and HTTP metadata can provide useful investigative leads.
-- Clear documentation should explain what was observed, what it means, and what is still unknown.
-
-## Notes
-
-All traffic reviewed in this project is from a simulated lab environment. Packet captures containing private IP details, credentials, personal data, or real organization traffic should not be published.
+- Packet analysis depends on context; one packet rarely proves an incident by itself.
+- TCP handshake behavior is important for understanding connection failures and denial-of-service symptoms.
+- DNS availability is critical because users may experience a service as down when name resolution fails.
+- Recommendations should be tied to observed symptoms and should avoid overclaiming when evidence is limited.

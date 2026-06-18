@@ -4,7 +4,7 @@
 
 This project documents a beginner-level phishing investigation using simulated and sanitized evidence. The public portfolio artifacts are original Markdown summaries that explain the investigation process, indicators reviewed, escalation reasoning, and response recommendations.
 
-Source materials were used only as private reference during the rewrite process. The public-facing portfolio evidence is the original Markdown documentation linked below.
+The public-facing portfolio evidence is the original Markdown documentation linked below.
 
 ## Scenario Summary
 

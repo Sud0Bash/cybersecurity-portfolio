@@ -33,7 +33,7 @@ Includes original portfolio-safe scripts for login access validation, IP allow-l
 **Status:** Portfolio-ready  
 **Focus:** Phishing indicators, URL reputation concepts, alert documentation, and response recommendations.
 
-Includes an investigation README, indicators of compromise, VirusTotal-style notes, completed alert ticket, incident journal, playbook, and written report based on simulated/sanitized material.
+Includes an investigation README, sanitized alert summary, indicators of compromise, hash reputation notes, triage summary, incident-handler summary, and response workflow based on simulated/sanitized material.
 
 ### [Network Traffic Analysis](projects/network-traffic-analysis/)
 
@@ -47,7 +47,7 @@ Includes a network analysis README and completed PDF reports for DNS/port 53 out
 **Status:** Portfolio-ready  
 **Focus:** Linux permissions review and command-line practice.
 
-Includes a completed Linux file-permissions report PDF and screenshot evidence from the lab activity.
+Includes a completed Linux file-permissions report PDF and screenshot evidence from the permissions review.
 
 ### [Alert Triage Lab](projects/alert-triage-lab/)
 
@@ -107,7 +107,7 @@ Includes simulated authentication notes, a completed failed-login triage report,
 | [Raspberry Pi Cyberdeck](projects/raspberry-pi-cyberdeck/) | Raspberry Pi 5 portable security lab, Linux setup, touchscreen work, Python launcher development, NFC testing, and SDR-related learning | Active / featured project | Build photos, screenshots, launcher source code, image inventory, hardware integration notes, and README documentation. |
 | [Python Security Automation](projects/python-security-automation/) | Beginner Python scripting for security support tasks | Active / portfolio-ready | Original scripts, README, sample output examples, and notebook-review notes for portfolio-safe learning adaptations. |
 | [Alert Triage Lab](projects/alert-triage-lab/) | SOC alert review, severity assessment, and escalation notes | Portfolio-ready | Simulated authentication notes, completed failed-login triage report, and SOC-style README. |
-| [Phishing Email Investigation](projects/phishing-email-investigation/) | Phishing indicators, URL reputation concepts, incident notes, and response recommendations | Portfolio-ready | Investigation README, indicators of compromise, VirusTotal-style notes, completed alert ticket, incident journal, playbook, and written report. |
+| [Phishing Email Investigation](projects/phishing-email-investigation/) | Phishing indicators, URL reputation concepts, incident notes, and response recommendations | Portfolio-ready | Investigation README, sanitized alert summary, indicators of compromise, hash reputation notes, triage summary, incident-handler summary, and response workflow. |
 | [Network Traffic Analysis](projects/network-traffic-analysis/) | Wireshark, tcpdump, protocol review, and network-attack analysis | Portfolio-ready | Network analysis README and completed PDF reports for DNS/port 53 outage investigation and SYN flood analysis. |
 | [Linux File Permissions](projects/linux-file-permissions/) | Linux permissions review and command-line practice | Portfolio-ready | Completed Linux file-permissions report PDF and screenshot evidence. |
 | [Phishing Analysis](projects/phishing-analysis/) | General phishing analysis practice and checklist development | Scaffolded / planned | README scaffold only; completed phishing work is currently documented in the separate phishing email investigation project. |
@@ -124,6 +124,10 @@ Includes simulated authentication notes, a completed failed-login triage report,
 - Expanding network traffic analysis and phishing investigation documentation
 - Developing the Raspberry Pi cyberdeck as a personal lab platform
 - Improving report writing, evidence handling, and project documentation
+
+## Training & Certifications
+
+- [Google Cybersecurity Certificate Progress](docs/certifications/google-cybersecurity-progress.md)
 
 ## Ethical Scope
 

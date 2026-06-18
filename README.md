@@ -114,7 +114,7 @@ Includes simulated authentication notes, a completed failed-login triage report,
 | [Linux Security Labs](projects/linux-security-labs/) | Users, permissions, processes, logs, and basic system review | Scaffolded / planned | README scaffold and placeholder folders for future command examples, notes, and sanitized screenshots. |
 | [Incident Response Lab](projects/incident-response-lab/) | Incident workflow, timelines, evidence organization, and reporting | Scaffolded / planned | README scaffold and placeholder folders for future incident reports, timelines, and screenshots. |
 | [Linux Homelab](projects/linux-homelab/) | Linux lab environment documentation | Planned | Empty README and placeholder folders. |
-| [Vulnerability Assessment](projects/vulnerability-assessment/) | Vulnerability review and reporting practice | Planned | Empty README only; no vulnerability report, risk register, or assessment artifact yet. |
+| [Vulnerability Assessment](projects/vulnerability-assessment/) | Simulated risk assessment, vulnerability review, and risk-register documentation | Portfolio-ready | Original Markdown assessment summary, risk register, security risk assessment, and concepts notes. |
 
 ## Current Focus
 

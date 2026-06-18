@@ -112,7 +112,7 @@ Includes simulated authentication notes, a completed failed-login triage report,
 | [Linux File Permissions](projects/linux-file-permissions/) | Linux permissions review and command-line practice | Portfolio-ready | Original Markdown report and screenshot evidence. |
 | [Phishing Analysis](projects/phishing-analysis/) | General phishing analysis practice and checklist development | Scaffolded / planned | README scaffold only; completed phishing work is currently documented in the separate phishing email investigation project. |
 | [Linux Security Labs](projects/linux-security-labs/) | Users, permissions, processes, logs, and basic system review | Scaffolded / planned | README scaffold and placeholder folders for future command examples, notes, and sanitized screenshots. |
-| [Incident Response Lab](projects/incident-response-lab/) | Incident workflow, timelines, evidence organization, and reporting | Scaffolded / planned | README scaffold and placeholder folders for future incident reports, timelines, and screenshots. |
+| [Incident Response Lab](projects/incident-response-lab/) | Simulated incident workflow, timelines, escalation, and evidence organization | Portfolio-ready | Original Markdown incident report, timeline, escalation summary, and incident response notes. |
 | [Linux Homelab](projects/linux-homelab/) | Linux lab environment documentation | Planned | Empty README and placeholder folders. |
 | [Vulnerability Assessment](projects/vulnerability-assessment/) | Simulated risk assessment, vulnerability review, and risk-register documentation | Portfolio-ready | Original Markdown assessment summary, risk register, security risk assessment, and concepts notes. |
 

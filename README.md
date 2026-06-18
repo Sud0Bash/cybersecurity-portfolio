@@ -66,15 +66,19 @@ This repository is designed to demonstrate practical learning, documentation abi
 
 ## Portfolio Projects
 
-| Project | Focus Area | Current Status | Evidence Needed |
+| Project | Focus Area | Current Status | Evidence |
 | --- | --- | --- | --- |
-| [Alert Triage Lab](projects/alert-triage-lab/) | SOC alert review, severity assessment, escalation notes | Scaffolded | Completed sample alerts, screenshots, triage reports |
-| [Incident Response Lab](projects/incident-response-lab/) | Incident workflow, timelines, evidence organization | Scaffolded | Completed incident report, investigation timeline, screenshots |
-| [Network Traffic Analysis](projects/network-traffic-analysis/) | Wireshark, tcpdump, protocol review | Scaffolded | Packet capture examples, filters, screenshots, findings |
-| [Phishing Analysis](projects/phishing-analysis/) | Email indicators, URL/file reputation checks, written analysis | Scaffolded | Sanitized sample emails, header review, reputation screenshots |
-| [Linux Security Labs](projects/linux-security-labs/) | Users, permissions, processes, logs, network services | Scaffolded | Command examples, sanitized terminal output, hardening notes |
-| [Python Security Automation](projects/python-security-automation/) | Beginner security scripting and automation | Scaffolded | Scripts, sample input/output, usage notes, screenshots |
-| [Raspberry Pi Cyberdeck](projects/raspberry-pi-cyberdeck/) | Raspberry Pi 5 portable security lab, Linux setup, touchscreen work, Python launcher development, IR/NFC experimentation, Wi-Fi monitoring concepts, and SDR-related learning | Scaffolded | Build photos, diagrams, setup notes, launcher documentation |
+| [Raspberry Pi Cyberdeck](projects/raspberry-pi-cyberdeck/) | Raspberry Pi 5 portable security lab, Linux setup, touchscreen work, Python launcher development, NFC testing, and SDR-related learning | Active / featured project | Build photos, screenshots, launcher source code, image inventory, hardware integration notes, and README documentation. |
+| [Python Security Automation](projects/python-security-automation/) | Beginner Python scripting for security support tasks | Active / portfolio-ready | Original scripts, README, sample output examples, and notebook-review notes for portfolio-safe learning adaptations. |
+| [Alert Triage Lab](projects/alert-triage-lab/) | SOC alert review, severity assessment, and escalation notes | Portfolio-ready | Simulated authentication notes, completed failed-login triage report, and SOC-style README. |
+| [Phishing Email Investigation](projects/phishing-email-investigation/) | Phishing indicators, URL reputation concepts, incident notes, and response recommendations | Portfolio-ready | Investigation README, indicators of compromise, VirusTotal-style notes, completed alert ticket, incident journal, playbook, and written report. |
+| [Network Traffic Analysis](projects/network-traffic-analysis/) | Wireshark, tcpdump, protocol review, and network-attack analysis | Portfolio-ready | Network analysis README and completed PDF reports for DNS/port 53 outage investigation and SYN flood analysis. |
+| [Linux File Permissions](projects/linux-file-permissions/) | Linux permissions review and command-line practice | Portfolio-ready | Completed Linux file-permissions report PDF and screenshot evidence. |
+| [Phishing Analysis](projects/phishing-analysis/) | General phishing analysis practice and checklist development | Scaffolded / planned | README scaffold only; completed phishing work is currently documented in the separate phishing email investigation project. |
+| [Linux Security Labs](projects/linux-security-labs/) | Users, permissions, processes, logs, and basic system review | Scaffolded / planned | README scaffold and placeholder folders for future command examples, notes, and sanitized screenshots. |
+| [Incident Response Lab](projects/incident-response-lab/) | Incident workflow, timelines, evidence organization, and reporting | Scaffolded / planned | README scaffold and placeholder folders for future incident reports, timelines, and screenshots. |
+| [Linux Homelab](projects/linux-homelab/) | Linux lab environment documentation | Planned | Empty README and placeholder folders. |
+| [Vulnerability Assessment](projects/vulnerability-assessment/) | Vulnerability review and reporting practice | Planned | Empty README only; no vulnerability report, risk register, or assessment artifact yet. |
 
 ## Raspberry Pi 5 Cyberdeck Project
 

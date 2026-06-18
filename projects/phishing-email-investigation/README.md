@@ -1,89 +1,87 @@
 # Phishing Email Investigation
 
-## Scenario
+## Project Overview
 
-A simulated user reported a suspicious email claiming that their account would be locked unless they verified their password through an external link. The email included urgent language, a mismatched sender domain, and a link that did not match the claimed service.
+This project documents a beginner-level phishing investigation using simulated and sanitized evidence. The public portfolio artifacts are original Markdown summaries that explain the investigation process, indicators reviewed, escalation reasoning, and response recommendations.
 
-This project documents a beginner-level phishing investigation using safe, simulated email details. No real user mailbox, company data, or live malicious content is included.
+Source materials were used only as private reference during the rewrite process. The public-facing portfolio evidence is the original Markdown documentation linked below.
 
-## Objective
+## Scenario Summary
 
-- Review a suspicious email for common phishing indicators
-- Analyze sender, subject, message content, links, and headers at a beginner level
-- Document evidence and determine whether the message should be treated as phishing
-- Recommend safe response actions for users and security teams
+A simulated mail-security alert reported a suspicious email sent to a recruiting-style mailbox. The message appeared to impersonate a job applicant and encouraged the recipient to open an attachment. The attachment and sender details were suspicious enough to require triage, indicator review, and escalation recommendation.
 
-## Tools Used
-
-- Simulated phishing email sample
-- Email header review concepts
-- VirusTotal or safe URL reputation lookup concepts
-- Browser safe preview methods
-- Markdown documentation
-
-## Methodology
-
-1. Reviewed the email subject, sender display name, and sender address.
-2. Checked whether the sender domain matched the claimed organization.
-3. Reviewed the message body for urgency, credential requests, spelling issues, and suspicious formatting.
-4. Inspected the visible link text and compared it with the simulated destination URL.
-5. Reviewed mock header details for source inconsistencies.
-6. Checked the simulated URL reputation result.
-7. Documented indicators, findings, severity, and recommended response actions.
-8. Treated the email as suspicious without clicking links or downloading attachments.
-
-## Findings
-
-- The email used urgent language to pressure the recipient into immediate action.
-- The sender domain did not match the organization the email claimed to represent.
-- The link destination was different from the visible link text.
-- The message requested credential verification, which is a common phishing indicator.
-- Simulated reputation review marked the destination as suspicious.
-- No attachment analysis was required because the sample did not include an attachment.
-
-## Recommendations
-
-- Do not click links or submit credentials from the suspicious email.
-- Report the email through the approved phishing reporting process.
-- Block or monitor the sender domain in a lab or simulated control list.
-- Search for similar messages sent to other users in the simulated environment.
-- Provide user awareness guidance about urgent credential-request emails.
-- If credentials were entered, reset the password and review account activity.
+No real mailbox, real company data, real user credentials, or live malicious file is included in this project.
 
 ## Skills Demonstrated
 
-- Phishing indicator identification
-- Sender and domain review
-- URL inspection
-- Basic email header analysis
-- Reputation-check documentation
-- User-focused security recommendations
-- Clear SOC-style written reporting
+- Phishing alert triage
+- Email sender and message review
+- Attachment-risk identification
+- IOC extraction and organization
+- Hash/reputation-check concepts
+- Escalation decision writing
+- User-focused response recommendations
+- Clear SOC-style documentation using simulated evidence
 
-## Screenshots
+## Tools and Concepts Used
 
-Screenshots should be added to the `screenshots/` folder after sanitization.
+- Simulated email-alert details
+- Email header and sender review concepts
+- File hash and reputation-check concepts
+- Basic phishing response workflow
+- Markdown reporting
+- Safe handling of potentially malicious attachments
 
-Recommended screenshots:
+## Evidence Reviewed
 
-- Sanitized phishing email sample
-- Header review output with private data removed
-- Safe URL reputation result
-- Highlighted suspicious link mismatch
+- [Sanitized Alert Summary](artifacts/sanitized-alert-summary.md)
+- [Phishing Alert Triage Summary](reports/phishing-alert-triage-summary.md)
+- [Incident Handler Summary](reports/incident-handler-summary.md)
+- [Phishing Response Workflow](reports/phishing-response-workflow.md)
 
-Example:
+## Key Indicators
 
-```markdown
-![Sanitized phishing email indicators](screenshots/phishing-indicators.png)
-```
+The investigation focused on sanitized indicators:
+
+- Suspicious sender identity that did not clearly match the message context.
+- Recruiting-themed social engineering directed at a mailbox likely to receive attachments.
+- Executable-style attachment disguised as business or resume-related content.
+- Attachment hash documented as suspicious/malicious in the learning scenario.
+- User action indicating the attachment may have been opened.
+- Need for endpoint review and broader email search.
+
+## Investigation Summary
+
+The email was suspicious because the sender details, message theme, and attachment behavior did not align with normal business expectations. The highest-risk item was the attachment: it was presented as job-application material but used an executable-style filename.
+
+The simulated hash/reputation context supported treating the attachment as malicious. Because the scenario indicated possible user execution, the alert should not be closed as benign. The appropriate beginner-level response is to document the indicators, preserve evidence, and escalate for endpoint and mailbox review.
+
+## Escalation and Response Decision
+
+**Decision:** Escalate for further investigation.
+
+**Reason:** The alert involved a suspicious attachment with malicious-file indicators and possible user execution. A level-one analyst should document the evidence and escalate rather than attempting to fully determine endpoint impact from the email alert alone.
+
+## Recommendations
+
+- Preserve the suspicious email and attachment metadata.
+- Search for the same sender, subject pattern, attachment name, and hash in mail logs.
+- Identify any other users who received or opened similar messages.
+- Review the affected endpoint for process execution, new files, persistence, or unusual network activity.
+- Block or monitor confirmed malicious indicators in the simulated environment.
+- Provide user awareness guidance about unexpected executable attachments and password-protected files.
+- Reset credentials only if follow-up evidence suggests credential exposure.
+
+## Ethical and Sanitization Note
+
+This project uses simulated and sanitized learning material. It does not include real user emails, real credentials, private mailbox content, live malicious links, production security logs, or professional incident-response claims.
+
+The public documentation is written in original wording to show security reasoning and documentation skill.
 
 ## Lessons Learned
 
-- Phishing investigations should focus on observable indicators, not assumptions.
-- Urgency, sender mismatch, and credential requests are important warning signs.
-- Links should be inspected safely without visiting unknown destinations directly.
-- Clear recommendations help users and analysts understand what action to take next.
-
-## Notes
-
-This project uses simulated and sanitized phishing data only. It does not include real user emails, credentials, private mailbox content, or live malicious links.
+- Phishing investigations should focus on observable evidence instead of assumptions.
+- Attachment type and delivery context can be stronger warning signs than message wording alone.
+- Hash indicators are useful, but analysts should also document sender, subject, filename, delivery method, and user action.
+- Escalation decisions should explain what is confirmed, what is unknown, and what should be reviewed next.
+- Public portfolio work should summarize learning in original wording with clear scope and sanitization.

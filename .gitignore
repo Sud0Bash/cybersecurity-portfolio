@@ -38,3 +38,12 @@ secrets*
 
 # Keep intentional placeholders
 !.gitkeep
+
+# Private course/reference materials
+private/
+**/artifacts/exemplars/
+**/*[Ee]xemplar*.pdf
+**/*Portfolio Activity*.pdf
+**/*[Aa]lert*ticket*.pdf
+**/*[Pp]laybook*.pdf
+**/*[Jj]ournal*.pdf
